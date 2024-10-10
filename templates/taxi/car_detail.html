@@ -9,7 +9,7 @@
     <p>Drivers:</p>
       <ul>
         {% for driver in car.drivers.all %}
-          <li><a href="{% url 'taxi:driver_detail' driver.id %}">{{ driver.license_number }}</a></li>
+          <li><a href="{% url 'taxi:driver-detail' driver.id %}">{{ driver.license_number }}</a></li>
         {% endfor %}
       </ul>
     {% else %}
